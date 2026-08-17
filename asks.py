@@ -23,7 +23,7 @@
 
 # 12. DRF сам создает валидацию и правильную структуру, сериалайзер превращает из объекта модели в JSON и наоборот. Все происходит под капотом.
 
-# 13. books = Book.objects.filter(author='Ivan Ivanov', publication_date__year__gt=2020).order_by('title')
+# 13. books = Book.objects.filter(author__name='Ivan Ivanov', publication_date__year__gt=2020).order_by('title')
 
 
 # Для проверки практического задания - python manage.py runserver
